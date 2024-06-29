@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.757);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 50px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 12px 20px; /* Adjusted padding for input */
+    height: 30px; /* Reduced height of input */
+    border-radius: 25px;
+    flex: 1;
+    font-size: 16px; /* Slightly reduced font size */
+}
+
+.search button {
+    margin-top: 10px;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%; /* Increased border radius for button */
+    width: 60px; /* Increased width of button */
+    height: 60px; /* Adjusted height of button */
+    cursor: pointer;
+}
+
+.search button img {
+    width: 20px;
+}
+
+.weather-icon {
+    width: 130px; /* Reduced size of weather icon */
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 60px; /* Adjusted font size for temperature */
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 36px; /* Adjusted font size for city name */
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin-top: 40px; /* Reduced margin top */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 0 15px; /* Reduced margin between columns */
+}
+
+.col img {
+    width: 28px; /* Adjusted size of detail icons */
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 20px; /* Reduced font size for humidity and wind speed */
+    margin-top: -2px; /* Adjusted margin for better alignment */
+}

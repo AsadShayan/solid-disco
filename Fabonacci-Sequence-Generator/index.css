@@ -1,0 +1,77 @@
+body {
+             background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading {
+            text-align: center;
+            color: #333333;
+            margin-top: 0;
+        }
+
+        .importance {
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            color: #555555;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .card {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .input-container {
+            margin-bottom: 20px;
+        }
+
+        .input-container input {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .generate-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .generate-button:hover {
+            background-color: #45a049;
+        }
+
+        #output {
+            font-size: 18px;
+            margin-top: 20px;
+        }

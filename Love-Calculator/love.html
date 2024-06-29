@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="icon" type="x-con/image" href="images/love.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="love.css">
+</head>
+<body>
+    <div class="header">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-balloon-heart" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"/>
+</svg>
+        <span class="fs-4"> Love Calculator </span>
+      </a>
+      
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+    </ul>
+</header>
+</div>
+<div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">A Gen1 Love Calculator.</h1>
+        <p class="lead">Welcome to the Love Calculator, where you can discover the mystical connection between you and your partner. Simply enter your names into the fields below and let the magic unfold as we calculate your compatibility. Whether you're curious about your crush or seeking reassurance in your relationship, our love calculator is here to provide insight into the depths of your connection. Don't hesitate, give it a try and uncover the secrets of your love story!</p>
+        <img class="heartsvg1" src="images/hearts.svg" alt="hearts">
+         <img class="heartsvg2" src="images/hearts.svg" alt="hearts">
+        <img class="heartsvg3" src="images/hearts.svg" alt="hearts">
+      </div>
+
+<div class="card" style="width: 19rem;">
+  <img src="images/Untitled.png" class="card-img-top" alt="...">
+  <hr class="hrr">
+  <div class="card-body">
+    <h5 class="card-title">Calculate your Love</h5>
+  <input id="yourName" class="text-box" type="text" placeholder="Your Name">
+    <input id="partnerName" class="text-box" type="text" placeholder="Their Name">
+    <a id="calculateBtn" class="btn btn-outline-danger" style="margin-left: 83px;" href="/index.html">Calculate</a>
+    
+    <script>
+        // Update the event listener to calculate the result and store it in localStorage
+        document.getElementById('calculateBtn').addEventListener('click', function() {
+            var yourName = document.getElementById('yourName').value;
+            var partnerName = document.getElementById('partnerName').value;
+
+            // Check if both input fields are not empty
+            if (yourName.trim() === '' || partnerName.trim() === '') {
+                alert('Please enter both names!');
+                return;
+            }
+
+            var number = Math.random() * 100;
+            number = Math.round(number);
+            
+            // Store the result in localStorage
+            localStorage.setItem('loveResult', 'The love compatibility between ' + yourName + ' and ' + partnerName + ' is ' + number + '%');
+
+            // Redirect to index.html
+            window.location.href = '/index.html';
+        });
+    </script>
+</div>
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
